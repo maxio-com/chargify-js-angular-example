@@ -1,0 +1,9 @@
+<form #form>
+  <div id="chargify-form"></div>
+  <label>
+    Hidden Token: <input id="host-token" disabled [value]="token"/>
+  </label>
+  <p>
+    <button type="button" (click)="handleSubmit()">Submit Host Form</button>
+  </p>
+</form>

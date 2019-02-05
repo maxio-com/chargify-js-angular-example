@@ -1,0 +1,8 @@
+<div style="text-align:center">
+  <p>
+    <select required (change)="handlePaymentTypesChange($event.target.value)">
+      <option *ngFor="let paymentType of paymentTypes" [value]="paymentType.value">{{paymentType.name}}</option>
+    </select>
+  </p>
+  <app-chargify-form [type]="paymentType"></app-chargify-form>
+</div>
