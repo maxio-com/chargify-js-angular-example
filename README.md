@@ -1,6 +1,6 @@
 ## Usage
 
-Edit `app/chargify-form/chargify-form.component.ts` and change publicKey and serverHost in ngOnInit().
+Edit `src/app/chargify-form/chargify-form.component.ts` and change publicKey and serverHost in ngOnInit().
 
 Next run:
 
