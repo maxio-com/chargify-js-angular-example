@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/chargify-js-angular-example",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -49,6 +50,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -131,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "chargify-js-angular-example"
+  "defaultProject": "chargify-js-angular-example",
+  "cli": {
+    "analytics": "c0e8c7ba-3cea-453b-b3fc-8c8c651244a8"
+  }
 }
