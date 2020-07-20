@@ -8,7 +8,7 @@ declare var Chargify: any;
 })
 export class ChargifyFormComponent implements OnInit {
   @Input() type: string = 'card';
-  @ViewChild('form') chargifyForm: ElementRef;
+  @ViewChild('form', { static: true }) chargifyForm: ElementRef;
   chargify: any;
   token: string = '';
 
